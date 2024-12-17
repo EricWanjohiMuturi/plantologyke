@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <!-- hero -->
+    <div id="carouselExample" class="carousel slide my-4 bg-white border border-success-subtle rounded p-5 shadow" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row flex-lg-row align-items-center g-3">
+              <div class="col-lg-6">
+                <h1 class="display-4 fw-bold lh-1 mb-3 text-success">
+                  Your Digital Journey Starts Here.
+                </h1>
+                <p class="lead text-success">
+                  Partner with us to create user-friendly solutions that drive results.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-success btn-lg px-4 me-md-2">Learn More</button>
+                  <button type="button" class="btn btn-success btn-lg px-4">Projects</button>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <img src="{% static 'images/Responsive-web-design.png' %}" class="d-flex mx-lg-auto img-fluid" alt="Responsive Web Design" width="430" loading="lazy">
+              </div>
+            </div>
+          </div>
+      
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row flex-lg-row align-items-center g-3">
+              <div class="col-lg-6">
+                <h1 class="display-4 fw-bold lh-1 mb-3 text-success">
+                  Cutting Edge Solutions for your Business!
+                </h1>
+                <p class="lead text-success">
+                  Let us help you build a strong online presence and grow your brand.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-success btn-lg px-4 me-md-2">Learn More</button>
+                  <button type="button" class="btn btn-success btn-lg px-4">Portfolio</button>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <img src="{% static 'images/Responsive-web-design.png' %}" class="d-flex mx-lg-auto img-fluid" alt="Business Solutions" width="430" loading="lazy">
+              </div>
+            </div>
+          </div>
+      
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="row flex-lg-row align-items-center g-3">
+              <div class="col-lg-6">
+                <h1 class="display-4 fw-bold lh-1 mb-3 text-success">
+                  Innovate and Excel 
+                  with Our Expertise!
+                </h1>
+                <p class="lead text-success">
+                  We specialize in crafting tailored digital solutions to meet your goals.
+                </p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <button type="button" class="btn btn-success btn-lg px-4 me-md-2">Contact Us</button>
+                  <button type="button" class="btn btn-success btn-lg px-4">Our Services</button>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <img src="{% static 'images/Responsive-web-design.png' %}" class="d-flex mx-lg-auto img-fluid" alt="Innovation" width="430" loading="lazy">
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-success-subtle rounded" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-success-subtle rounded" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+</div>
+{% endblock content %}
